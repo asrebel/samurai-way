@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-import {Technologies} from "./Technologies";
-import {Header} from "./Header";
-import {Footer} from "./Footer";
+import {Header} from "./components/Header";
+import {NavBar} from "./components/NavBar";
+import {Profile} from "./components/Profile";
 
 export const App = () => {
     return (
-        <div>
-            <Header/>
-            <Technologies/>
-            <Footer/>
+        <div className='app-wrapper'>
+            <Header />
+            <NavBar />
+            <Profile />
         </div>
     );
 }
